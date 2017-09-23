@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  function reloj(){
+  var fecha = new Date();
+  var hora = fecha.getHours();
+  var min = fecha.getMinutes();
+  var seg = fecha.getSeconds();
+  var recarga = setTimeout("reloj()", 500);
+  document.getElementById('print').innerHTML = hora + " : " + min + " : " + seg;
+  }//fin-reloj
+  </script>
+</head>
+<body onload="reloj()">
+<script type="text/javascript">
+</script>
+<div id="print"> </div>
+</body>
+</html>
